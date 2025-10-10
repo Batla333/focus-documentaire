@@ -7,12 +7,19 @@ export default function Depardon() {
     <main className="min-h-screen bg-gray-50 text-gray-800 p-8">
 
        {/* Header avec nom du site et bouton accueil */}
-      <header className="flex justify-between items-center max-w-6xl mx-auto mb-12">
-        <h1 className="text-3xl font-bold text-green-700">FOCUS Documentaire</h1>
-        <Link href="/" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-          Accueil
-        </Link>
-      </header>
+      <header className="bg-white shadow-md w-full mb-10 flex justify-between items-center px-8 py-4">
+    <img
+      src="/images/logo.png"
+      alt="FOCUS documentaire"
+      className="w-50 h-auto rounded-none shadow-none object-contain"
+    />
+    <Link
+      href="/"
+      className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+    >
+      Accueil
+    </Link>
+  </header>
 
       {/* En-tête */}
       <section className="max-w-5xl mx-auto text-center mb-12">

@@ -6,9 +6,14 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50">
 
       {/* Header */}
+      
       <header className="bg-white shadow-md w-full">
         <div className="max-w-5xl mx-auto flex justify-between items-center p-6">
-          <h1 className="text-3xl font-bold text-green-800">FOCUS Documentaire</h1>
+          <img
+      src="/images/logo.png"
+      alt="FOCUS documentaire"
+      className="w-50 h-auto rounded-none shadow-none object-contain"
+    />
           <nav className="space-x-6">
             <a href="#" className="text-gray-900 hover:underline">Critiques</a>
             <a href="#" className="text-gray-900 hover:underline">Articles</a>
@@ -46,7 +51,7 @@ export default function Home() {
         </h2>
          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
           </div>
-          {/* Exemple : Raymond Depardon */}
+       
           <Link href="/realisateur.ice.s/Depardon" className="inline-block px-6 ">
             <div className="cursor-pointer hover:scale-120 transition transform">
               <img
@@ -60,6 +65,21 @@ export default function Home() {
          </div>
          
           </Link>
+
+          <Link href="/realisateur.ice.s/Cavalier" className="inline-block px-6 ">
+            <div className="cursor-pointer hover:scale-120 transition transform">
+              <img
+                src="/images/CAVALIER.jpg"
+                alt="Alain Cavalier"
+                className="rounded-xl shadow-lg w-50 h-50 object-cover"
+              />
+              <h3 className=" mt-2 font-semibold px-10 text-lg text-gray-800">
+                Alain Cavalier
+              </h3>
+         </div>
+         
+          </Link>
+
          </section>
 
       {/* Footer */}

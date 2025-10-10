@@ -31,7 +31,7 @@ export default function Cavalier() {
       <section className="max-w-5xl mx-auto text-center mb-20">
         <h1 className="text-5xl font-bold mb-5">Alain Cavalier</h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Après des fictions à succès, Alain Cavalier choisit le medium documentaire comme outil d'experimentation. Réalisateur d'une sensibilité rare, il développe dans son oeuvre un cinéma du commentaire-direct, dicté par celui qui se nomme "Le Filmeur".
+          Après des fictions à succès, Alain Cavalier choisit le medium documentaire comme outil d&apos;experimentation. Réalisateur d&apos;une sensibilité rare, il développe dans son oeuvre un cinéma du commentaire-direct, dicté par celui qui se nomme &quot;Le Filmeur&quot;.
         </p>
       </section>
 
@@ -91,7 +91,7 @@ export default function Cavalier() {
                 alt="L'Amitié"
                 className="rounded-md mb-3"
             />
-            <h3 className="font-semibold text-lg">L'Amitié</h3>
+            <h3 className="font-semibold text-lg">L&apos;Amitié</h3>
             <p className="text-sm text-gray-500">2022</p>
           </div>
 

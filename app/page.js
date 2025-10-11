@@ -15,7 +15,8 @@ export default function Home() {
       className="w-50 h-auto rounded-none shadow-none object-contain"
     />
           <nav className="space-x-6">
-            <a href="#" className="text-gray-900 hover:underline">Critiques</a>
+            
+            <a href="/docutheque" className="text-gray-900 hover:underline">Docuthèque</a>
             <a href="#" className="text-gray-900 hover:underline">Articles</a>
             <a href="#" className="text-gray-900 hover:underline">Entretiens</a>
           </nav>
@@ -25,7 +26,7 @@ export default function Home() {
       {/* Hero / Introduction */}
       <section className="flex flex-col items-center justify-center text-center py-20 px-4">
         <p className="text-lg text-gray-600 max-w-xl">
-          Un espace dédié au cinéma documentaire : actualités, articles, entretiens...
+          Un espace dédié au cinéma documentaire : actualités, articles, entretiens, films...
         </p>
       </section>
 
@@ -37,10 +38,14 @@ export default function Home() {
           <h2 className="text-2xl text-green-700 font-bold mb-3">À la une</h2>
           <p className="text-gray-400"> Derniers articles et critiques.</p>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl text-green-700 font-bold mb-3">Entretiens</h2>
-          <p className="text-gray-400">Rencontres et discussions avec des réalisateur.ice.s et professionnel.le.s du documentaire.</p>
-        </div>
+         <Link href="/docutheque">
+    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer">
+      <h2 className="text-2xl text-green-700 font-bold mb-3"> La Docuthèque</h2>
+      <p className="text-gray-400">
+        Découvrez une sélection de films documentaires expérimentaux, étudiants, amateurs...
+      </p>
+    </div>
+         </Link>
       </section>
 
 
@@ -50,7 +55,7 @@ export default function Home() {
          Galerie de réalisateur·ice·s documentaires
         </h2>
          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
-          </div>
+        </div>
        
           <Link href="/realisateur.ice.s/Depardon" className="inline-block px-6 ">
             <div className="cursor-pointer hover:scale-120 transition transform">
@@ -62,8 +67,20 @@ export default function Home() {
               <h3 className=" mt-2 font-semibold px-4 text-lg text-gray-800">
                 Raymond Depardon
               </h3>
-         </div>
-         
+             </div>
+          </Link>
+
+          <Link href="/realisateur.ice.s/Saab" className="inline-block px-6 ">
+            <div className="cursor-pointer hover:scale-120 transition transform">
+              <img
+                src="/images/saab.jpg"
+                alt="Jocelyne Saab"
+                className="rounded-xl shadow-lg w-50 h-50 object-cover"
+              />
+              <h3 className=" mt-2 font-semibold px-10 text-lg text-gray-800">
+                Jocelyne Saab
+              </h3>
+             </div>
           </Link>
 
           <Link href="/realisateur.ice.s/Cavalier" className="inline-block px-6 ">
@@ -76,8 +93,20 @@ export default function Home() {
               <h3 className=" mt-2 font-semibold px-10 text-lg text-gray-800">
                 Alain Cavalier
               </h3>
-         </div>
-         
+            </div>
+           </Link>
+
+           <Link href="/realisateur.ice.s/Simon" className="inline-block px-6 ">
+            <div className="cursor-pointer hover:scale-120 transition transform">
+              <img
+                src="/images/clairesimon.jpg"
+                alt="Claire Simon"
+                className="rounded-xl shadow-lg w-50 h-50 object-cover"
+              />
+              <h3 className=" mt-2 font-semibold px-10 text-lg text-gray-800">
+                Claire Simon
+              </h3>
+             </div>
           </Link>
 
          </section>

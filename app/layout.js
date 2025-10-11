@@ -1,4 +1,10 @@
 import "./globals.css";
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
 
 export const metadata = {
   title: "FOCUS Documentaire",
@@ -11,7 +17,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="bg-gray-50 text-gray-900">{children}</body>
+      <body className={jakarta.className}>{children}</body>
     </html>
   );
 }

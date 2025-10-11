@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function Docutheque() {
   const [filmActif, setFilmActif] = useState(null);
 
-    
 
   const films = [
     {
@@ -45,6 +44,7 @@ export default function Docutheque() {
         {films.map((film, index) => (
           <div
             key={index}
+            id={film.titre.replace(/\s+/g, "-")} // <
             onClick={() => setFilmActif(film)}
             className="cursor-pointer group"
           >

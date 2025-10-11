@@ -25,7 +25,7 @@ export default function Simon() {
       <section className="max-w-5xl mx-auto text-center mb-12">
         <h1 className="text-5xl font-bold mb-4">Claire Simon</h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Née à Londres, Claire Simon apprend le cinéma par le montage. Plus tard, elle découvre le cinéma direct grace aux Ateliers Varan. Ses films enchaîne les sélections en festivals, Berlinale, Cannes, Visions du Réel et font d'elle une figure majeure du cinéma documentaire en France.
+          Née à Londres, Claire Simon apprend le cinéma par le montage. Plus tard, elle découvre le cinéma direct grace aux Ateliers Varan. Ses films enchaîne les sélections en festivals, Berlinale, Cannes, Visions du Réel et font d&apos;elle une figure majeure du cinéma documentaire en France.
 
         </p>
       </section>

@@ -7,16 +7,46 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "FOCUS Documentaire",
+  title: "FOCUS documentaire",
   description: "Un espace dédié au cinéma documentaire",
+  keywords: [
+    "cinéma documentaire",
+    "focus documentaire",
+    "films documentaires",
+    "étudiants cinéma",
+    "docuthèque",
+    "FOCUS documentaire site",
+    "documentaire"
+  ],
+  openGraph: {
+    title: "FOCUS documentaire",
+    description:
+      "Un espace dédié au cinéma documentaire : actualités, entretiens et films étudiants.",
+    url: "https://focus-documentaire.vercel.app",
+    siteName: "FOCUS documentaire",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Logo Focus Documentaire",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
+  <meta
+    name="google-site-verification"
+    content="QtysjYzf1gVY9lVkTAMms6Sp-dff13HU6YD9hdPuJjE"
+  />
+  <link rel="icon" href="/favicon.ico" />
+</head>
       <body className={jakarta.className}>{children}</body>
     </html>
   );

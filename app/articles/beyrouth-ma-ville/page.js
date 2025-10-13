@@ -43,22 +43,22 @@ export default function beyrouthmaville() {
             Juin 1982, Le Sud du Liban se fait envahir par une armée Israélienne massive. Beyrouth, 
             capitale du pays, se fait assiéger. La ville devient alors un espace abîmée et symptomatique d&apos;un 
             conflit Israelo-palestinien qui ne cesse de croître. C&apos;est ce Beyrouth qui sera filmée par Jocelyne Saab 
-            dans l'ensemble de son œuvre, une ville marquée par les conflits, les bombardements et surtout une 
+            dans l&apos;ensemble de son œuvre, une ville marquée par les conflits, les bombardements et surtout une 
             médiatisation extrêmement péjorative, reflétant l&apos;image dune ville où ne réside que violence, débris, 
             et mort.
         </p>
 
         <p className="mb-4 text-sm text-justify">
             Dans Beyrouth ma Ville, troisième volet de la série beyrouthine de Jocelyne Saab, le 
-            spectateur est interrogé sur l'image qu&apos;il peut avoir de la capitale. Dans son film, la réalisatrice met sa 
+            spectateur est interrogé sur l&apos;image qu&apos;il peut avoir de la capitale. Dans son film, la réalisatrice met sa 
             caméra à disposition de ceux qui sont toujours là, qui vivent parmi les débris causés par les bombes. 
             Elle offre, aux vivants, l&apos;occasion d&apos;exister et surtout, de témoigner par leur présence, leur résistance. 
         </p>
      <h2 className="text-3xl text-center font-semibold mt-10 mb-4 text-gray-990">
-            Jocelyne Saab, une auteure libanaise au service d'une parole résistante, survivante.
+            Jocelyne Saab, une auteure libanaise au service d&apos;une parole résistante, survivante.
         </h2>
         <h2 className="text-2xl-justify font-semibold mt-10 mb-4 text-gray-900">
-            Jocelyne Saab en tant qu'auteure-témoin.
+            Jocelyne Saab en tant qu&apos;auteure-témoin.
         </h2>
 
         <p className="text-justify mb-4">
@@ -74,7 +74,7 @@ export default function beyrouthmaville() {
             personnalisé, à la première personne, évoquant des expériences personnelles et 
             intimes et surtout en emmenant le spectateur dans sa propre maison, bombardée 
             par l&apos;Etat Israélien. Dès lors, la réalisatrice s&apos;affranchit des normes télévisuelles et 
-            s&apos;affirme en tant qu'auteure documentaire. L&apos;ensemble de la lecture du film à suivre 
+            s&apos;affirme en tant qu&apos;auteure documentaire. L&apos;ensemble de la lecture du film à suivre 
             sera alors emprunt de la subjectivité de sa réalisatrice qui a, dès les premières 
             minutes, partagé son vécu et son lien très intime avec le sujet qu&apos;elle expose au 
             public. 
@@ -89,7 +89,7 @@ export default function beyrouthmaville() {
             “Au fond c&apos;est pas grave, parce que ce n&apos;est que des murs, nous sommes tous sortis 
             vivants. À penser le nombre de morts qu&apos;il y a depuis quelques jours, d&apos;une part à cause des 
             bombardements des Israéliens, à cause des bagarres intérieures… je sais pas je me pose 
-            des questions, l'essentiel c&apos;est de survivre, de vivre. ” 
+            des questions, l&apos;essentiel c&apos;est de survivre, de vivre. ” 
         </blockquote>
 
         <p className="text-justify mb-4">
@@ -104,7 +104,7 @@ export default function beyrouthmaville() {
 
         <p className="text-justify mb-4">
             Dans le film, nombreux sont les personnages qui apparaissent, existent. Pourtant rarement voire presque jamais,
-            ils ne s'expriment à la caméra. Rarement ils ne parlent, s&apos;adressent et donc témoignent par la parole. On peut
+            ils ne s&apos;expriment à la caméra. Rarement ils ne parlent, s&apos;adressent et donc témoignent par la parole. On peut
             alors se demander si leur présence relève vraiment du témoignage, peut-être n&apos;est-ce simplement qu&apos;une démonstration 
             dans le sens où ils sont montrés au spectateur. A mon sens, on peut considérer chaque présence, dans le film, 
             d&apos;un personnage vivant comme un témoignage. 
@@ -122,7 +122,7 @@ export default function beyrouthmaville() {
             son propre témoignage. Au-delà de ces images, c&apos;est la voix-off, très littéraire, interprétée par Roger Assaf qui 
             appuie le propos de Jocelyne Saab. Dans une forme, encore une fois, proche des codes du reportage, elle complète l&apos;image mais, 
             dans son contenu, prend à contrepied les motifs de la télévision. Elle y ajoute un commentaire plus poétique, et surtout
-            plus engagé, à l&apos;instar de l'œuvre globale de la réalisatrice.
+            plus engagé, à l&apos;instar de l&apos;œuvre globale de la réalisatrice.
 
         </p>
         
@@ -131,7 +131,7 @@ export default function beyrouthmaville() {
         </h2>
 
          <blockquote className="text-justify border-l-4 border-green-700 pl-4 italic text-gray-600 my-8">
-           “ On a trop dit l&apos;horreur et la dévastation, trop raconté la mort qui s'abattait sur nous et qui venait d&apos;ailleurs. 
+           “ On a trop dit l&apos;horreur et la dévastation, trop raconté la mort qui s&apos;abattait sur nous et qui venait d&apos;ailleurs. 
            Les guerres, les images, ce qu&apos;on retient c&apos;est tout ce qui exprime la présence d&apos;un ennemi, ses crimes, ses images projetées sur la ville. 
             Toutes ces images de la mort tellement superposées qu&apos;on ne voyait plus les hommes accrochés à la vie.” 
         </blockquote>
@@ -155,11 +155,11 @@ export default function beyrouthmaville() {
         </blockquote>
 
         <p className="text-justify mb-4">
-            Une guerre se compose d'êtres humains, d'êtres vivants, dont la plus grande majorité ne sont que des victimes, d'où l'importance de les
+            Une guerre se compose d&apos;êtres humains, d&apos;êtres vivants, dont la plus grande majorité ne sont que des victimes, d&apos;où l&apos;importance de les
              filmer, de les montrer, de les faire témoigner. Cette phrase justifie le choix de filmer le vivant au milieu des débris, de la ville rasée 
              qui serait ici “le vide”. La séquence à 13:46 devient alors un panorama de cette vie dans la ville rasée, où les gens s&apos;amusent, échangent,
               résistent. Il y a quelque chose qui relève de la beauté dans l&apos;idée de filmer le vivant peu importe le contexte, permettant au sein du film 
-              pourtant grave, l&apos;essor d&apos;un ton optimiste, du registre de l&apos;espoir qui naît du vivant résistant. On pourrait d'ailleurs résumer cette lecture
+              pourtant grave, l&apos;essor d&apos;un ton optimiste, du registre de l&apos;espoir qui naît du vivant résistant. On pourrait d&apos;ailleurs résumer cette lecture
               optimiste synonyme d&apos;espoir dans une anecdote que raconte la voix off : 
         </p>
 
@@ -182,7 +182,7 @@ export default function beyrouthmaville() {
             ne peut-être juste. Lors du passage des archives, il n&apos;y a aucune voix, empêchant alors toute forme de narration et imposant l&apos;idée que l&apos;horreur ne se 
             raconte pas et, par conséquent, ne peut être quantifier. Elle choisit de montrer le caractère ultra-violent des bombardements en filmant les victimes.
             Bien que l&apos;on dit que ce sont les vainqueurs qui écrivent l&apos;histoire, qui la raconte, Jocelyne Saab raconte la guerre sans qu&apos;il n&apos;y est de gagnant, 
-            cependant elle procède à une désinvisibilisation des victimes, et humanise alors la guerre et le massacre, à l'encontre du format télévisuel qui se cantonne 
+            cependant elle procède à une désinvisibilisation des victimes, et humanise alors la guerre et le massacre, à l&apos;encontre du format télévisuel qui se cantonne 
             à filmer débris et bombardements en plan larges, comme dans les premiers archives aperçus dans la même séquence.
          </p>
 
@@ -196,8 +196,8 @@ export default function beyrouthmaville() {
 
              Jocelyne Saab, avec son film Beyrouth, Ma Ville, permet alors à tout un peuple de témoigner sa résistance. En se réappropriant les codes du monde du 
              journalisme, la réalisatrice libanaise insuffle à son film une justesse rare et légitimise l&apos;importance de son discours alarmiste. La situation à 
-             Beyrouth est grave, et Jocelyne Saab le montre, sans jamais oublier les vivants qui résistent et permettent à la ville d'être toujours debout. La
-              multiplicité des témoignages au sein du film donnent alors lieu à une lecture complexe de l'œuvre, où s'entremêlent personnages et histoires mais 
+             Beyrouth est grave, et Jocelyne Saab le montre, sans jamais oublier les vivants qui résistent et permettent à la ville d&apos;être toujours debout. La
+              multiplicité des témoignages au sein du film donnent alors lieu à une lecture complexe de l&apos;œuvre, où s&apos;entremêlent personnages et histoires mais 
               toujours actifs comme reflet du témoignage personnel et intime de son auteure, Jocelyne Saab, témoin majeure de son propre film.
         </p>
 

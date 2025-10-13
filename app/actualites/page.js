@@ -13,15 +13,15 @@ export default function Actualites() {
       principal: true,
     },
     {
-      titre: "Projection spéciale ‘Portraits de village’",
+      titre: "Projection spéciale &apos;Portraits de village&apos;",
       date: "20 octobre 2025",
       description:
-        "Projection suivie d’un débat avec le réalisateur.",
+        "Projection suivie d&apos;un débat avec le réalisateur.",
       image: "/images/projection.jpg",
       lien: "#",
     },
     {
-      titre: "Sortie cinéma : ‘Le Vent du Soir’",
+      titre: "Sortie cinéma : &apos;Le Vent du &apos;",
       date: "15 novembre 2025",
       description:
         "Nouvelle sortie dans les salles françaises.",

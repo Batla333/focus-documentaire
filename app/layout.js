@@ -42,6 +42,8 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <head>
   <meta name="google-site-verification" content="BKgpIER5IzYL1k3KiwJOD8jFznXYcio2eu4oL_WHozI" />
+  <meta name="description" content="Focus Documentaire : actualités, articles, entretiens, films documentaires" />
+  <meta name="robots" content="index, follow" />
   <link rel="icon" href="/favicon.ico" />
 </head>
       <body className={jakarta.className}>{children}</body>

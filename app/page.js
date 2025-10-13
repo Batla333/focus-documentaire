@@ -27,9 +27,24 @@ export default function Home() {
 
         {/* Navigation */}
         <nav className="flex gap-4">
-          <Link href="#" className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300">Actualités</Link>
-          <Link href="#" className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300">Articles</Link>
-          <Link href="#" className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300">Contact</Link>
+          <Link
+            href="/actualites"
+            className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300"
+          >
+            Actualités
+          </Link>
+          <Link
+            href="/articles"
+             className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300"
+          > Articles
+            
+          </Link>
+          <Link
+            href="/contacts"
+            className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300"
+          >
+            Contacts
+          </Link>
         </nav>
       </header>
 

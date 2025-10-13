@@ -22,17 +22,37 @@ export default function Docutheque() {
     <main className="min-h-screen bg-gray-50 p-10">
 
     <header className="bg-white shadow-md w-full mb-10 flex justify-between items-center px-8 py-4">
-    <img
+    <Link
+      href="/"
+    >
+       <img
       src="/images/logo.png"
       alt="FOCUS documentaire"
       className="w-50 h-auto rounded-none shadow-none object-contain"
     />
-    <Link
-      href="/"
-      className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-    >
-      Accueil
     </Link>
+
+     <nav className="flex gap-4">
+          <Link
+            href="/actualites"
+            className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300"
+          >
+            Actualités
+          </Link>
+          <Link
+            href="/articles"
+             className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300"
+          > Articles
+            
+          </Link>
+          <Link
+            href="/contacts"
+            className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300"
+          >
+            Contacts
+          </Link>
+        </nav>
+
   </header>
 
       <h1 className="text-4xl font-bold text-center mb-10 text-gray-800">

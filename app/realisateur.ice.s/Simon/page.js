@@ -8,16 +8,14 @@ export default function Simon() {
 
        {/* Header avec nom du site et bouton accueil */}
       <header className="bg-white shadow-md w-full mb-10 flex justify-between items-center px-8 py-4">
-    <img
+    <Link
+      href="/"
+    >
+       <img
       src="/images/logo.png"
       alt="FOCUS documentaire"
       className="w-50 h-auto rounded-none shadow-none object-contain"
     />
-    <Link
-      href="/"
-      className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-    >
-      Accueil
     </Link>
   </header>
 

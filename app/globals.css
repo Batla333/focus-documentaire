@@ -23,6 +23,7 @@ body {
     --foreground: #ededed;
   }
 }
+@layer utilities { .break-inside-avoid { break-inside: avoid; } }
 
 html {
   scroll-behavior: smooth;

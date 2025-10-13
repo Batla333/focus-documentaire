@@ -8,18 +8,16 @@ export default function Saab() {
 
        {/* Header avec nom du site et bouton accueil */}
       <header className="bg-white shadow-md w-full mb-10 flex justify-between items-center px-8 py-4">
-    <img
+    <Link
+      href="/"
+    >
+       <img
       src="/images/logo.png"
       alt="FOCUS documentaire"
       className="w-50 h-auto rounded-none shadow-none object-contain"
     />
-    <Link
-      href="/"
-      className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-    >
-      Accueil
     </Link>
-  </header>
+   </header>
 
       {/* En-tête */}
       <section className="max-w-5xl mx-auto text-center mb-12">
@@ -80,6 +78,19 @@ export default function Saab() {
             />
             <h3 className="font-semibold text-lg">Beyrouth, ma ville</h3>
             <p className="text-sm text-gray-500">1983</p>
+             <Link
+    href="/articles/beyrouth-ma-ville"
+    className="flex items-center gap-3 group"
+  >
+    <img
+      src="/images/consulter.png"   // ton logo PNG dans /public/images/
+      alt="Icône texte"
+      className="w-10 h-10 object-contain transition-transform group-hover:scale-110"
+    />
+    <span className="text-green-700 font-medium group-hover:underline">
+      Consulter les textes associés au film
+    </span>
+  </Link>
           </div>
 
           <div className="bg-white rounded-xl shadow hover:shadow-lg transition p-4">

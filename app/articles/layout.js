@@ -6,3 +6,7 @@ openGraph: {
     images: ["/images/logo.png"],
   },
   };
+  
+export default function ArticlesLayout({ children }) {
+  return <>{children}</>;
+}

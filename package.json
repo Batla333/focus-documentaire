@@ -12,8 +12,10 @@
     "next": "15.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "swiper": "^12.0.2"
+    "swiper": "^12.0.2",
+    "type": "module"
   },
+  
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",

@@ -9,6 +9,15 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
+export const metadata = {
+  title: "FOCUS Documentaire — Un espace dedié au cinéma documentaire.",
+  description:
+    "FOCUS Documentaire explore le cinéma du réel : actualités, articles, critiques, médiathèque documentiare...",
+openGraph: {
+    images: ["/images/logo.png"],
+  },
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 p-8 flex flex-col">

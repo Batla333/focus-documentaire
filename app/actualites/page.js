@@ -1,6 +1,14 @@
 "use client";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Actualités — FOCUS Documentaire",
+  description:
+    "Retrouvez les dernières actualités du cinéma documentaire : projections, festivals, sorties et évènements.",
+openGraph: {
+    images: ["/images/logo.png"],
+  },
+  };
 export default function Actualites() {
   const articles = [
     {

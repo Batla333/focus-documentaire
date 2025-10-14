@@ -2,6 +2,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Articles — FOCUS Documentaire",
+  description:
+    "Analyses, critiques et études de films : le cinéma documentaire à travers des textes écrits par des passionnés, des étudiants...",
+openGraph: {
+    images: ["/images/logo.png"],
+  },
+  };
 export default function Articles() {
   const [articles, setArticles] = useState([]);
   const [query, setQuery] = useState("");

@@ -7,6 +7,6 @@ openGraph: {
   },
   };
   
-export default function ArticlesLayout({ children }) {
+export default function ActualitesLayout({ children }) {
   return <>{children}</>;
 }

@@ -1,54 +1,36 @@
-import { NextResponse } from "next/server";
-
-export async function GET() {
+export default function sitemap() {
   const baseUrl = "https://focus-documentaire.vercel.app";
 
-  const urls = [
+  return [
     {
-      loc: `${baseUrl}/`,
-      changefreq: "weekly",
+      url: `${baseUrl}/`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
       priority: 1.0,
     },
     {
-      loc: `${baseUrl}/docutheque`,
-      changefreq: "monthly",
+      url: `${baseUrl}/docutheque`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      loc: `${baseUrl}/articles`,
-      changefreq: "weekly",
+      url: `${baseUrl}/articles`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      loc: `${baseUrl}/actualites`,
-      changefreq: "weekly",
+      url: `${baseUrl}/actualites`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      loc: `${baseUrl}/contacts`,
-      changefreq: "yearly",
+      url: `${baseUrl}/contacts`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
       priority: 0.5,
     },
   ];
-
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls
-  .map(
-    (url) => `
-  <url>
-    <loc>${url.loc}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>${url.changefreq}</changefreq>
-    <priority>${url.priority}</priority>
-  </url>`
-  )
-  .join("")}
-</urlset>`;
-
-  return new NextResponse(xml, {
-    headers: {
-      "Content-Type": "application/xml",
-    },
-  });
 }

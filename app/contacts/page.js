@@ -1,14 +1,8 @@
+"use client";
 
 import Link from "next/link";
 
-export const metadata = {
-  title: "Contact — FOCUS Documentaire",
-  description:
-    "Contactez l’équipe de FOCUS Documentaire pour toute information, proposition de partenariat ou collaboration.",
-openGraph: {
-    images: ["/images/logo.png"],
-  },
-  };
+
 export default function Contacts() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800 p-8">

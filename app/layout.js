@@ -50,3 +50,12 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+export const metadata = {
+  title: "FOCUS Documentaire — Un espace dedié au cinéma documentaire.",
+  description:
+    "FOCUS Documentaire explore le cinéma du réel : actualités, articles, critiques, médiathèque documentiare...",
+openGraph: {
+    images: ["/images/logo.png"],
+  },
+};
+

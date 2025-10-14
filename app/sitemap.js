@@ -1,30 +1,53 @@
-export default function sitemap() {
-  const baseUrl = "https://focus-documentaire.vercel.app";
+import { NextResponse } from "next/server";
 
-  return [
+export async function GET() {
+  const baseUrl = "https://focus-documentaire.vercel.app";
+  const urls = [
     {
-      url: `${baseUrl}/`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      loc: `${baseUrl}/`,
+      changefreq: "weekly",
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/docutheque`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
+      loc: `${baseUrl}/docutheque`,
+      changefreq: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/articles`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      loc: `${baseUrl}/articles`,
+      changefreq: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/actualites`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      loc: `${baseUrl}/actualites`,
+      changefreq: "weekly",
       priority: 0.9,
     },
+    {
+      loc: `${baseUrl}/contacts`,
+      changefreq: "yearly",
+      priority: 0.5,
+    },
   ];
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${urls
+      .map(
+        (url) => `
+      <url>
+        <loc>${url.loc}</loc>
+        <lastmod>${new Date().toISOString()}</lastmod>
+        <changefreq>${url.changefreq}</changefreq>
+        <priority>${url.priority}</priority>
+      </url>`
+      )
+      .join("")}
+  </urlset>`;
+
+  return new NextResponse(xml, {
+    headers: {
+      "Content-Type": "application/xml",
+    },
+  });
 }

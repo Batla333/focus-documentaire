@@ -2,18 +2,11 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Articles — FOCUS Documentaire",
-  description:
-    "Analyses, critiques et études de films : le cinéma documentaire à travers des textes écrits par des passionnés, des étudiants...",
-openGraph: {
-    images: ["/images/logo.png"],
-  },
-  };
 export default function Articles() {
   const [articles, setArticles] = useState([]);
   const [query, setQuery] = useState("");
 
+  // Charger les articles depuis un JSON (tu pourras le créer ensuite)
   useEffect(() => {
     fetch("/data/articles.json")
       .then((res) => res.json())
@@ -47,9 +40,9 @@ export default function Articles() {
           </Link>
           <Link
             href="/articles"
-             className="px-4 py-2 rounded-full text-white bg-green-700 font-medium border border-transparent hover:bg-green-800 transition-all duration-300"
-          > Articles
-            
+            className="px-4 py-2 rounded-full text-white bg-green-700 font-medium border border-transparent hover:bg-green-800 transition-all duration-300"
+          >
+            Articles
           </Link>
           <Link
             href="/contacts"
@@ -74,7 +67,7 @@ export default function Articles() {
       {/* === LISTE DES ARTICLES === */}
       <section className="max-w-6xl mx-auto px-6">
         <h1 className="text-4xl font-bold text-gray-800 mb-10 text-center">
-          Articles et textes autour des films
+          Articles, critiques, études de films documentaires.
         </h1>
 
         {/* Masonry-style layout */}

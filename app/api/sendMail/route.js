@@ -34,6 +34,7 @@ Description : ${body.filmDescription || "Non précisé"}
   };
 
   try {
+    console.log("ENVOI TEST :", mailOptions);
     await transporter.sendMail(mailOptions);
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (err) {

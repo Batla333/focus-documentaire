@@ -7,8 +7,8 @@ export default function Cavalier() {
     <main className="min-h-screen bg-gray-50 text-gray-800 p-8">
 
        {/* Header avec nom du site et bouton accueil */}
-    <header>
-   <Link
+   <header className="bg-white shadow-md w-full mb-10 flex justify-between items-center px-8 py-4">
+    <Link
       href="/"
     >
        <img

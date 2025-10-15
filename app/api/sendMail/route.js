@@ -3,21 +3,21 @@ import nodemailer from "nodemailer";
 export async function POST(req) {
   const body = await req.json();
 
-  // === Configuration du transporteur pour Outlook ===
+  
   const transporter = nodemailer.createTransport({
-    host: "smtp.office365.com",
-    port: 587,
-    secure: false, // TLS activé automatiquement sur ce port
-    auth: {
-      user: process.env.EMAIL_USER, // ton adresse Outlook
-      pass: process.env.EMAIL_PASS, // ton mot de passe (ou mot de passe d’appli)
-    },
-  });
+  host: process.env.SMTP_HOST,
+  port: process.env.SMTP_PORT,
+  secure: false,
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: process.env.EMAIL_USER, // tu reçois sur ton adresse
-    replyTo: body.email, // permet de répondre directement à l'expéditeur
+    to: "focusdocumentaire@outlook.com",
+    replyTo: body.email,
     subject: `📩 Nouveau message de ${body.nom} via FOCUS documentaire`,
     text: `
 Nom : ${body.nom}

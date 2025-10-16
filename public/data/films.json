@@ -6,5 +6,24 @@
     "videoUrl": "https://youtube.com/embed/WkxoaSzy1zw",
     "description": "Un portrait intime de François Corneloup, musicien et père",
     "image": "/images/toutcequonlaisse.png"
+  },
+
+  {
+    "titre": "Baloo, ou Notes sur un nouveau début",
+    "realisateur": ["Renata Kotti-Domprets", "Mance Mousson"],
+    "annee": 2025,
+    "videoUrl": "https://www.youtube.com/embed/tTD2h0Akenc?si=tWpvmRcIZNE8LwnR",
+    "description": "Les pigeons sont nos compagnons. Ils ont des ailes mais ne volent pas. Ils choisissent de rester dans la ville. Nous avons décidé de quitter la nôtre et de voler. Nous pensions que l'errance serait insouciante et légère. Perdus dans les images et les mots, l'enfant qui est en nous apparaît et éclate. Nous voulons nous faire des souvenirs et aimer de nouveaux amis. ",
+    "image": "/images/baloo.png"
+  },
+
+  {
+    "titre": "Dima Halal",
+    "realisateur": ["Renata Kotti-Domprets", "Mance Mousson"],
+    "annee": 2024,
+    "videoUrl": "https://www.youtube.com/embed/yYaZFwetnK0",
+    "description": "Avec Abdel Moumen, Abdel Jalil, Mata, Samir, Islam, Achraf, Chiko, Korso, Karim, Farid, Amado, Mohammed Amanissi, les clients réguliers de la boucherie “Dima Halal” et les autres personnes qui ont accepté de se faire filmer",
+    "image": "/images/dimahalal.png"
   }
 ]
+

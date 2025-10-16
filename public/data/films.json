@@ -17,6 +17,15 @@
     "image": "/images/baloo.png"
   },
 
+   {
+    "titre": "La longue route de sable (film-esquisse)",
+    "realisateur": ["Achille Rat"],
+    "annee": 2025,
+    "videoUrl": "https://www.youtube.com/embed/pkDmovAOqjA",
+    "description": "La longue route de sable est le journal d’un voyage à pied en solitaire le long de la Côte d’Argent. En observateur silencieux, le réalisateur erre à la recherche d’un lien perdu avec la nature. Sur son chemin se dressent les vestiges d’une société qui ne tient plus debout. La longue route de sable est un essai documentaire sur la frénésie de notre monde moderne. Film-esquisse",
+    "image": "/images/lrsesquisse.png"
+  },
+
   {
     "titre": "Dima Halal",
     "realisateur": ["Renata Kotti-Domprets", "Mance Mousson"],

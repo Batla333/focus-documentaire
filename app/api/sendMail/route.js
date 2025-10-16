@@ -3,20 +3,20 @@ import nodemailer from "nodemailer";
 export async function POST(req) {
   const body = await req.json();
 
-  
+  // === Configuration SMTP Zoho ===
   const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: process.env.SMTP_PORT,
-  secure: false,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
+    host: "smtp.zoho.eu", // bien .eu si ton compte Zoho est européen
+    port: 465, // port SSL
+    secure: true,
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+    },
+  });
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: "focusdocumentaire@outlook.com",
+    to: process.env.EMAIL_USER, // tu reçois le message ici
     replyTo: body.email,
     subject: `📩 Nouveau message de ${body.nom} via FOCUS documentaire`,
     text: `
@@ -39,6 +39,6 @@ Description : ${body.filmDescription || "Non précisé"}
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (err) {
     console.error("Erreur d’envoi :", err);
-    return new Response(JSON.stringify({ success: false }), { status: 500 });
+    return new Response(JSON.stringify({ success: false, error: err.message }), { status: 500 });
   }
 }

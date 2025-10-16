@@ -1,40 +1,39 @@
 "use client";
 import Link from "next/link";
 
-
 export default function Actualites() {
   const articles = [
     {
-      titre: "Festival International du Film Documentaire",
-      date: "12 octobre 2025",
+      titre: "Festival des Escales Documentaire de La Rochelle",
+      date: " 2025",
       description:
-        "Une sélection de films documentaires du monde entier à Paris.",
-      image: "/images/festival.jpg",
+        "FOCUS Documentaire sera présent aux Escales Documentaire à La Rochelle !",
+      image: "/images/escales2025.jpg",
       lien: "#",
       principal: true,
     },
     {
-      titre: "Projection spéciale &apos;Portraits de village&apos;",
-      date: "20 octobre 2025",
+      titre: "Sortie en salle de Hors-Service, un film de Jean Boiron-Lajous.",
+      date: "8 octobre 2025",
       description:
-        "Projection suivie d&apos;un débat avec le réalisateur.",
-      image: "/images/projection.jpg",
+        "Un film documentaire en salle, dès maintenant",
+      image: "/images/hs.jpg",
       lien: "#",
     },
     {
-      titre: "Sortie cinéma : &apos;Le Vent du &apos;",
-      date: "15 novembre 2025",
+      titre: "Découvrez une sélection de documentaires sur la Docuthèque !",
+      date: "",
       description:
-        "Nouvelle sortie dans les salles françaises.",
-      image: "/images/ventdusoir.jpg",
-      lien: "#",
+        "Une sélection de travaux réalisés par les étudiants du Master Documentaire de Bordeaux Montaigne, déjà en ligne.",
+      image: "/images/lrsesquisse.png",
+      lien: "/docutheque",
     },
     {
-      titre: "Atelier documentaire étudiant",
-      date: "5 décembre 2025",
-      description: "Découvrez les jeunes talents du documentaire.",
-      image: "/images/atelier.jpg",
-      lien: "#",
+      titre: "Nouvel Article publié : Beyrouth, ma ville, un film de Jocelyne Saab",
+      date: "",
+      description: "Jocelyne Saab : une auteure libanaise au service d'une parole resistante, survivante. rédigé par Rémy Labat",
+      image: "/images/beyrouthmaville.jpg",
+      lien: "/articles/beyrouth-ma-ville",
     },
   ];
 

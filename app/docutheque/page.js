@@ -4,23 +4,38 @@ import Link from "next/link";
 
 export default function Docutheque() {
   const [films, setFilms] = useState([]);
+  const [query, setQuery] = useState("");
   const [filmActif, setFilmActif] = useState(null);
 
-  // 🔹 Charger les films depuis ton fichier JSON
+  // Charger les films depuis /data/films.json
   useEffect(() => {
     fetch("/data/films.json")
       .then((res) => res.json())
       .then((data) => setFilms(data))
-      .catch((err) => console.error("Erreur chargement films :", err));
+      .catch((err) => console.error("Erreur de chargement des films :", err));
   }, []);
 
+  // Filtrer les films selon la recherche
+  const filteredFilms = films.filter((film) => {
+  const titreMatch = film.titre.toLowerCase().includes(query.toLowerCase());
+
+  // Gère le cas où "realisateur" est soit une chaîne, soit un tableau
+  const realMatch = Array.isArray(film.realisateur)
+    ? film.realisateur.some((r) =>
+        r.toLowerCase().includes(query.toLowerCase())
+      )
+    : film.realisateur.toLowerCase().includes(query.toLowerCase());
+
+  return titreMatch || realMatch;
+});
+
   return (
-    <main className="min-h-screen bg-gray-50 p-10">
+    <main className="min-h-screen bg-gray-50 text-gray-800 p-8">
       {/* === HEADER === */}
       <header className="bg-white shadow-md w-full mb-10 flex justify-between items-center px-8 py-4">
         <Link href="/">
           <img
-            src="/images/logo.png"
+            src="/images/logoblanc.png"
             alt="FOCUS documentaire"
             className="w-50 h-auto object-contain"
           />
@@ -48,39 +63,53 @@ export default function Docutheque() {
         </nav>
       </header>
 
-      <h1 className="text-4xl font-bold text-center mb-10 text-gray-800">
-        La Docuthèque
-      </h1>
+      {/* === TITRE PRINCIPAL === */}
+      
+        <div className="flex justify-center mb-12">
+  <img
+    src="/images/focusdocuthequegris.png"
+    alt="Focus Docuthèque"
+    className="h-[90px] w-auto object-contain"
+  />
+</div>
+
+      {/* === BARRE DE RECHERCHE === */}
+      <div className="flex justify-center mb-10">
+        <input
+          type="text"
+          placeholder="Rechercher un film..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          className="w-full max-w-md px-5 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-green-700"
+        />
+      </div>
 
       {/* === GRILLE DES FILMS === */}
-      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {films.map((film, index) => (
+      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center">
+        {filteredFilms.map((film, index) => (
           <div
             key={index}
             onClick={() => setFilmActif(film)}
             className="cursor-pointer group"
           >
-            <div className="max-w-[160px] mx-auto relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all">
+            <div className="max-w-[180px] mx-auto relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all">
               <img
                 src={film.image}
                 alt={film.titre}
-                className="w-full aspect-[2.8/4] object-cover rounded-xl shadow-md transition-transform group-hover:scale-105"
+                className="w-full aspect-[3/4] object-cover rounded-xl shadow-md transition-transform group-hover:scale-105"
               />
             </div>
             <h2 className="text-lg font-semibold mt-2 text-center text-gray-900">
               {film.titre}
             </h2>
             <p className="text-sm text-gray-500 text-center">
-              {Array.isArray(film.realisateur)
-                ? film.realisateur.join(", ")
-                : film.realisateur}{" "}
-              — {film.annee}
+              {film.realisateur.join(", ")} — {film.annee}
             </p>
           </div>
         ))}
       </div>
 
-      {/* === MODAL === */}
+      {/* === MODAL LECTEUR VIDÉO === */}
       {filmActif && (
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
@@ -105,14 +134,9 @@ export default function Docutheque() {
                 className="w-full h-full rounded-lg"
               ></iframe>
             </div>
-            <h2 className="text-2xl font-semibold mt-4">
-              {filmActif.titre}
-            </h2>
+            <h2 className="text-2xl font-semibold mt-4">{filmActif.titre}</h2>
             <p className="text-sm text-gray-500 mb-2">
-              {Array.isArray(filmActif.realisateur)
-                ? filmActif.realisateur.join(", ")
-                : filmActif.realisateur}{" "}
-              — {filmActif.annee}
+              {filmActif.realisateur.join(", ")} — {filmActif.annee}
             </p>
             <p className="text-gray-700">{filmActif.description}</p>
           </div>

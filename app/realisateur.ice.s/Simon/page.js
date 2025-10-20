@@ -12,7 +12,7 @@ export default function Simon() {
       href="/"
     >
        <img
-      src="/images/logo.png"
+      src="/images/logoblanc.png"
       alt="FOCUS documentaire"
       className="w-50 h-auto rounded-none shadow-none object-contain"
     />

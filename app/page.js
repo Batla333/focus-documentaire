@@ -1,173 +1,146 @@
 "use client";
-
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import HeaderSearch from "./components/HeaderSearch";
+import Header from "./components/Header";
+import BlocDocutheque from "./components/BlocDocutheque";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Link from "next/link";
 
 export default function Home() {
+  const realisateurs = [
+    {
+      nom: "Raymond Depardon",
+      image: "/images/depardon.jpg",
+      lien: "/realisateur.ice.s/Depardon",
+    },
+    {
+      nom: "Alain Cavalier",
+      image: "/images/Cavalier.jpg",
+      lien: "/realisateur.ice.s/Cavalier",
+    },
+    {
+      nom: "Claire Simon",
+      image: "/images/clairesimon.jpg",
+      lien: "/realisateur.ice.s/Simon",
+    },
+    {
+      nom: "Jocelyne Saab",
+      image: "/images/saab.jpg",
+      lien: "/realisateur.ice.s/Saab",
+    },
+  ];
+
   return (
-    <main className="min-h-screen bg-gray-50 p-8 flex flex-col">
+    <main className="bg-[#f5f5f5] min-h-screen">
+      {/* === HEADER === */}
+      <Header />
 
-      {/* Header */}
-      <header className="bg-white shadow-md w-full mb-10 flex justify-between items-center px-8 py-4">
-        <img
-          src="/images/logo.png"
-          alt="FOCUS documentaire"
-          className="w-50 h-auto object-contain"
-        />
+      {/* === BANDEAU A LA UNE === */}
+      <section className="relative w-full h-[70vh]">
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          spaceBetween={0}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{ delay: 5000 }}
+          pagination={{ clickable: true }}
+          navigation={true}
+          className="h-full"
+        >
+          {/* === SLIDE 1 === */}
+          <SwiperSlide>
+            <div className="relative w-full h-full">
+              <img
+                src="/images/beyrouthmaville.jpg"
+                alt="Nouvel article, Beyrouth, ma ville."
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-green-900/50 via-transparent to-green-900/50" />
+              <div className="absolute bottom-10 left-10 text-white">
+                <h2 className="text-4xl font-bold">À la une — Nouvel article en ligne</h2>
+                <p className="text-lg max-w-xl">
+                  Beyrouth, ma ville - Jocelyne Saab, une auteure libanaise au service de la parole resistante, survivante de Beyrouth.
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
 
-         {/* Barre de recherche */}
-          <HeaderSearch />
-        
+          {/* === SLIDE 2 === */}
+          <SwiperSlide>
+            <div className="relative w-full h-full">
+              <img
+                src="/images/dima.png"
+                alt="Dima Halal"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-green-900/50 via-transparent to-green-900/50" />
+              <div className="absolute bottom-10 left-10 text-white">
+                <h2 className="text-4xl font-bold">À la une — Dima Halal</h2>
+                <p className="text-lg max-w-xl">
+                  Disponible dès maintenant sur la Docuthèque de FOCUS documentaire
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
 
-        {/* Navigation */}
-        <nav className="flex gap-4">
-          <Link
-            href="/actualites"
-            className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300"
-          >
-            Actualités
-          </Link>
-          <Link
-            href="/articles"
-             className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300"
-          > Articles
-            
-          </Link>
-          <Link
-            href="/contacts"
-            className="px-4 py-2 rounded-full text-gray-800 font-medium border border-transparent hover:border-green-700 hover:text-green-700 hover:bg-green-50 transition-all duration-300"
-          >
-            Contacts
-          </Link>
-        </nav>
-      </header>
-
-      {/* Hero / Introduction */}
-      <section className="flex flex-col items-center justify-center text-center py-20 px-4">
-        <h1 className="text-5xl font-bold text-center mb-6">
-          <span className="text-black">FOCUS</span>{"  "}{"  "}
-            <span style={{ color: "#2e6417" }}>documentaire</span>  
-        </h1>
-        <p className="text-lg text-gray-600 max-w-xl">
-          Un espace dédié au cinéma documentaire : actualités, articles, entretiens, films...
-        </p>
+          {/* === SLIDE 3 === */}
+          <SwiperSlide>
+            <div className="relative w-full h-full">
+              <img
+                src="/images/escales2025.jpg"
+                alt="Film à la une 3"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-green-900/50 via-transparent to-green-900/50" />
+              <div className="absolute bottom-10 left-10 text-white">
+                <h2 className="text-4xl font-bold">À la une — Les Escales Documentaires de La Rochelle</h2>
+                <p className="text-lg max-w-xl">
+                  Dès le 7 novembre 2025, nous serons présents aux Escales Documentaire !
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </section>
 
-      {/* Sections exemples */}
-      <section className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-10 px-4">
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl text-green-600 font-bold mb-3">À la une</h2>
-          <p className="text-gray-400">Derniers articles et critiques.</p>
+      {/* === BLOC DOCUTHEQUE === */}
+      <div className="my-20">
+        <BlocDocutheque />
+      </div>
+
+      {/* === GALERIE DES REALISATEURS === */}
+      <section className="w-full py-20 bg-[#f5f5f5]">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+          Galerie de réalisateur.ice.s documentaires
+        </h2>
+
+        <div className="flex overflow-x-auto gap-10 px-10 scrollbar-hide pb-6">
+          {realisateurs.map((r, index) => (
+            <Link
+              key={index}
+              href={r.lien}
+              className="flex-none w-56 group text-center"
+            >
+              <div className="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all">
+                <img
+                  src={r.image}
+                  alt={r.nom}
+                  className="w-full h-72 object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 className="mt-3 text-lg font-semibold text-gray-800 group-hover:text-green-700">
+                {r.nom}
+              </h3>
+            </Link>
+          ))}
         </div>
-        <Link href="/docutheque">
-          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer">
-            <h2 className="text-2xl text-green-600 font-bold mb-3">La Docuthèque</h2>
-            <p className="text-gray-400">Découvrez une sélection de films documentaires expérimentaux, étudiants, amateurs...</p>
-          </div>
-        </Link>
       </section>
-
-      {/* Galerie Réalisateurs */}
-     
-<section className="w-full py-12">
-  <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">
-    Galerie de réalisateur·ice·s documentaires
-  </h2>
-
-  <div className="max-w-6xl mx-auto">
-    <Swiper
-      modules={[Navigation]}
-      spaceBetween={30}
-      slidesPerView={3}
-      navigation
-      loop={false}
-      breakpoints={{
-        0: { slidesPerView: 1 },
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      }}
-    >
-      {/* Slide 1 */}
-      <SwiperSlide>
-        <Link href="/realisateur.ice.s/Depardon">
-          <div className="cursor-pointer text-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a8/RAYMOND_DEPARDON_AUTOPORTRAIT.jpg"
-              alt="Raymond Depardon"
-              className="rounded-xl shadow-lg w-64 h-64 object-cover mx-auto hover:scale-105 transition-transform duration-300"
-            />
-            <h3 className="mt-3 font-semibold text-lg text-gray-800">
-              Raymond Depardon
-            </h3>
-          </div>
-        </Link>
-      </SwiperSlide>
-
-      {/* Slide 2 */}
-      <SwiperSlide>
-        <Link href="/realisateur.ice.s/Saab">
-          <div className="cursor-pointer text-center">
-            <img
-              src="/images/saab.jpg"
-              alt="Jocelyne Saab"
-              className="rounded-xl shadow-lg w-64 h-64 object-cover mx-auto hover:scale-105 transition-transform duration-300"
-            />
-            <h3 className="mt-3 font-semibold text-lg text-gray-800">
-              Jocelyne Saab
-            </h3>
-          </div>
-        </Link>
-      </SwiperSlide>
-
-      {/* Slide 3 */}
-      <SwiperSlide>
-        <Link href="/realisateur.ice.s/Cavalier">
-          <div className="cursor-pointer text-center">
-            <img
-              src="/images/CAVALIER.jpg"
-              alt="Alain Cavalier"
-              className="rounded-xl shadow-lg w-64 h-64 object-cover mx-auto hover:scale-105 transition-transform duration-300"
-            />
-            <h3 className="mt-3 font-semibold text-lg text-gray-800">
-              Alain Cavalier
-            </h3>
-          </div>
-        </Link>
-      </SwiperSlide>
-
-      {/* Slide 4 */}
-      <SwiperSlide>
-        <Link href="/realisateur.ice.s/Simon">
-          <div className="cursor-pointer text-center">
-            <img
-              src="/images/clairesimon.jpg"
-              alt="Claire Simon"
-              className="rounded-xl shadow-lg w-64 h-64 object-cover mx-auto hover:scale-105 transition-transform duration-300"
-            />
-            <h3 className="mt-3 font-semibold text-lg text-gray-800">
-              Claire Simon
-            </h3>
-          </div>
-        </Link>
-      </SwiperSlide>
-    </Swiper>
-  </div>
-</section>
-        
-
-      {/* Footer */}
-      <footer className="bg-white mt-auto shadow-inner py-6">
-        <div className="max-w-5xl mx-auto text-center text-gray-500">
-          © 2025 FOCUS Documentaire. Tous droits réservés.
-        </div>
+        {/* === FOOTER === */}
+      <footer className="w-full bg-white text-center py-6 border-t border-gray-200 text-gray-500">
+        Copyright © 2025 FOCUS documentaire
       </footer>
-
     </main>
   );
 }

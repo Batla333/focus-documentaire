@@ -36,3 +36,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+  z-index: 50 !important;
+  transition: opacity 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 0.7;
+}

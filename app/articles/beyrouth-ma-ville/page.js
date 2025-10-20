@@ -25,7 +25,7 @@ export default function beyrouthmaville() {
         {/* Bloc auteur */}
         <div className="flex items-center gap-4 mb-10 border-l-4 border-green-700 pl-4">
           <img
-            src="/images/logo.png"
+            src="/images/logoblanc.png"
             alt="FOCUS documentaire"
             className="w-14 h-14 object-contain rounded-full"
           />

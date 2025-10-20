@@ -12,7 +12,7 @@ export default function Depardon() {
       href="/"
     >
        <img
-      src="/images/logo.png"
+      src="/images/logoblanc.png"
       alt="FOCUS documentaire"
       className="w-50 h-auto rounded-none shadow-none object-contain"
     />
@@ -32,12 +32,12 @@ export default function Depardon() {
       {/* Image du réalisateur */}
       <section className="max-w-3xl mx-auto mb-16">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a8/RAYMOND_DEPARDON_AUTOPORTRAIT.jpg"
+          src="/images/depardon.jpg"
           alt="Raymond Depardon"
           className="w-100 mx-auto rounded-2xl shadow-lg"
         />
         <p className="text-sm text-gray-500 mt-2 text-center">
-          Raymond Depardon. (Photo : Autoportrait de Raymond Depardon, 1995. )
+          (Photo : Raymond Depardon, 2012. )
         </p>
       </section>
 

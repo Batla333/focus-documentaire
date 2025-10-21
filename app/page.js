@@ -30,6 +30,16 @@ export default function Home() {
       image: "/images/saab.jpg",
       lien: "/realisateur.ice.s/Saab",
     },
+    {
+      nom: "Frederick Wiseman",
+      image: "/images/wiseman.jpg",
+      lien: "/realisateur.ice.s/Wiseman",
+    },
+    {
+      nom: "Dominique Cabrera",
+      image: "/images/Cabrera.jpg",
+      lien: "/realisateur.ice.s/Cabrera",
+    },
   ];
 
   return (

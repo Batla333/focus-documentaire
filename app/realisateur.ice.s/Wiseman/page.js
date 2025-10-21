@@ -23,7 +23,7 @@ export default function Wiseman() {
       <section className="max-w-5xl mx-auto text-center mb-12">
         <h1 className="text-5xl font-bold mb-4">Frederick Wiseman</h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-         Cinéaste américain né en 1930 à Boston, Frederick Wiseman est diplômé en droit en 1954 à la Yale Law School. Wiseman affirme dès son premier film documentaire, Titicut Follies en 1967, ses principes de base : l&apos;absence d'interviews, de commentaire off et de musiques additionnelles.
+         Cinéaste américain né en 1930 à Boston, Frederick Wiseman est diplômé en droit en 1954 à la Yale Law School. Wiseman affirme dès son premier film documentaire, Titicut Follies en 1967, ses principes de base : l&apos;absence d&apos;interviews, de commentaire off et de musiques additionnelles.
         </p>
       </section>
 

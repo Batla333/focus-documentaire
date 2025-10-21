@@ -31,7 +31,7 @@ export default function Cabrera() {
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
           Née en Algérie, Dominique Cabrera s&apos;installe en France en 1962. Après des études en lettres modernes, elle entre à l&apos;Idhec en 1977. Elle travaille comme monteuse dans les stations régionales de France 3 tout en suivant des cours de théâtre.
 
-En 1981, elle réalise son premier court métrage J&apos;ai droit à la parole où l&apos;on voit comment les locataires d&apos;une cité de transit en banlieue parisienne s'organisent. Depuis, les nombreux documentaires qu&apos;elle a réalisés l&apos;ont fait connaître, comme Chronique d&apos;une banlieue ordinaire, Une poste à La Courneuve ou encore Rester là-bas, dans lequel elle aborde les liens entre la France et l&apos;Algérie, à travers le retour de ceux qui sont restés là-bas.
+En 1981, elle réalise son premier court métrage J&apos;ai droit à la parole où l&apos;on voit comment les locataires d&apos;une cité de transit en banlieue parisienne s&apos;organisent. Depuis, les nombreux documentaires qu&apos;elle a réalisés l&apos;ont fait connaître, comme Chronique d&apos;une banlieue ordinaire, Une poste à La Courneuve ou encore Rester là-bas, dans lequel elle aborde les liens entre la France et l&apos;Algérie, à travers le retour de ceux qui sont restés là-basgi.
         </p>
       </section>
 
@@ -88,7 +88,7 @@ En 1981, elle réalise son premier court métrage J&apos;ai droit à la parole o
           <div className="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
             <img
                 src="/images/amitie.jpg"
-                alt="L'Amitié"
+                alt="L&apos;Amitié"
                 className="rounded-md mb-3"
             />
             <h3 className="font-semibold text-lg">L&apos;Amitié</h3>

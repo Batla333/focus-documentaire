@@ -29,9 +29,9 @@ export default function Cabrera() {
       <section className="max-w-5xl mx-auto text-center mb-20">
         <h1 className="text-5xl font-bold mb-5">Dominique Cabrera</h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Née en Algérie, Dominique Cabrera s'installe en France en 1962. Après des études en lettres modernes, elle entre à l'Idhec en 1977. Elle travaille comme monteuse dans les stations régionales de France 3 tout en suivant des cours de théâtre.
+          Née en Algérie, Dominique Cabrera s&apos;installe en France en 1962. Après des études en lettres modernes, elle entre à l&apos;Idhec en 1977. Elle travaille comme monteuse dans les stations régionales de France 3 tout en suivant des cours de théâtre.
 
-En 1981, elle réalise son premier court métrage J'ai droit à la parole où l'on voit comment les locataires d'une cité de transit en banlieue parisienne s'organisent. Depuis, les nombreux documentaires qu'elle a réalisés l'ont fait connaître, comme Chronique d'une banlieue ordinaire, Une poste à La Courneuve ou encore Rester là-bas, dans lequel elle aborde les liens entre la France et l'Algérie, à travers le retour de ceux qui sont restés « là-bas ».
+En 1981, elle réalise son premier court métrage J&apos;ai droit à la parole où l&apos;on voit comment les locataires d&apos;une cité de transit en banlieue parisienne s'organisent. Depuis, les nombreux documentaires qu&apos;elle a réalisés l&apos;ont fait connaître, comme Chronique d&apos;une banlieue ordinaire, Une poste à La Courneuve ou encore Rester là-bas, dans lequel elle aborde les liens entre la France et l&apos;Algérie, à travers le retour de ceux qui sont restés là-bas.
         </p>
       </section>
 
